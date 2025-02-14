@@ -1,4 +1,4 @@
-config.json
+*.json
 *.png
 *.jpg
 *.jpeg
