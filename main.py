@@ -36,5 +36,5 @@ if __name__ == "__main__":
         
     #Showing cart inventory and total value
     
-    print("\nSadrzaj korpe:")
+    print("\nCart content:")
     cart.display_cart()

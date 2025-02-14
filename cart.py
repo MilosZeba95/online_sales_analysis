@@ -23,4 +23,5 @@ class Cart():
             print("Cart content:")
             for product,quantity in self.cart_items:
                 print(f"{product.name} - {quantity}, Price for one: {product.price} EUR")
-            print(f"Total value: {self.calculate_total()}EUR")    
+            print(f"Total value: {self.calculate_total()}EUR") 
+       
