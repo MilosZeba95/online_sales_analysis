@@ -18,14 +18,14 @@ if __name__ == "__main__":
     manager.add_product(product4)
     
     
-   # Kreiranje instance korpe
+   #instance of Cart
     cart = Cart()
 
-    # Dodavanje slučajno odabranih proizvoda u korpu
+    #Adding random products to cart
     selected_products = random.sample(manager.products, 3)
     for product in selected_products:
-        cart.add_product_to_cart(product, 1)  # Dodajemo po jedan komad svakog proizvoda
+        cart.add_product_to_cart(product, 1)  #Adding one of each products
 
-    # Prikaz sadržaja korpe i ukupne vrednosti
+    #Display of cart content and total value
     print("\nSadržaj korpe:")
     cart.display_cart()
