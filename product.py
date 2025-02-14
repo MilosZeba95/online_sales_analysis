@@ -6,7 +6,7 @@ class Product:
 
     def display_info(self):
         #Shows info about product
-        print(f"Product: {self.name}, Price: {self.price} RSD, Quantity: {self.quantity}")
+        print(f"Product: {self.name}, Price: {self.price} EUR, Quantity: {self.quantity}")
 
     def update_quantity(self, new_quantity):
         #Updates product quantity

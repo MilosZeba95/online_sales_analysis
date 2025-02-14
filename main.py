@@ -1,7 +1,10 @@
 from product_manager import ProductManager
 from product import Product
+from cart import Cart
+import random
 if __name__ == "__main__":
     manager = ProductManager()
+    cart = Cart()
     
     #Adding products
     product1 = Product("Laptop",852,12)
@@ -23,3 +26,15 @@ if __name__ == "__main__":
     #Display total value of inventory
     print("\nTotal value of inventory")
     manager.total_value()
+    
+    #Adding random products to cart
+    
+    selected_products = random.sample(manager.products,3)
+    
+    for product in selected_products:
+        cart.add_product_to_cart(product,1) #Adding 1 of each product
+        
+    #Showing cart inventory and total value
+    
+    print("\nSadrzaj korpe:")
+    cart.display_cart()
