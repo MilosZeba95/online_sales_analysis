@@ -4,7 +4,6 @@ from cart import Cart
 import random
 if __name__ == "__main__":
     manager = ProductManager()
-    cart = Cart()
     
     #Adding products
     product1 = Product("Laptop",852,7)
@@ -19,4 +18,14 @@ if __name__ == "__main__":
     manager.add_product(product4)
     
     
- 
+   # Kreiranje instance korpe
+    cart = Cart()
+
+    # Dodavanje slučajno odabranih proizvoda u korpu
+    selected_products = random.sample(manager.products, 3)
+    for product in selected_products:
+        cart.add_product_to_cart(product, 1)  # Dodajemo po jedan komad svakog proizvoda
+
+    # Prikaz sadržaja korpe i ukupne vrednosti
+    print("\nSadržaj korpe:")
+    cart.display_cart()
