@@ -21,5 +21,6 @@ class ProductManager:
         print(f"Total value of all products: {total} RSD")
     
     def remove_product(self,product_name):
+        #Removes product from list 
         self.products = [product for product in self.products if product.name != product_name]
         
