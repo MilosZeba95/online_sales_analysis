@@ -18,8 +18,9 @@ class ProductManager:
     def total_value(self):
         #Calculates and displays sum of all products
         total = sum(product.price * product.quantity for product in self.products)
-        print(f"Total value of all products: {total} RSD")
+        print(f"Total value of all products: {total} EUR")
     
     def remove_product(self,product_name):
+        #Removes product from list 
         self.products = [product for product in self.products if product.name != product_name]
         

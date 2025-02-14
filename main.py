@@ -1,7 +1,10 @@
 from product_manager import ProductManager
 from product import Product
+from cart import Cart
+import random
 if __name__ == "__main__":
     manager = ProductManager()
+    cart = Cart()
     
     #Adding products
     product1 = Product("Laptop",852,7)
